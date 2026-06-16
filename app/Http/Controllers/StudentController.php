@@ -10,12 +10,12 @@ class StudentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        return Student::all();
-       return view('backend.students.index');
-    }
+ public function index()
+{
+    $students = Student::all();
 
+    return view('backend.students.index', compact('students'));
+}
     /**
      * Show the form for creating a new resource.
      */
