@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="adminHMD professional admin dashboard template">
     <title>Dashboard | adminHMD</title>
-@yield('styles')
+       <link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('')}}assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{asset('')}}assets/css/style.css">
+@stack('styles')
     
 </head>
 
@@ -24,7 +27,10 @@
           @include('backend.parts.footer')
         </div>
     </div>
-@yield('scripts')
+     
+    <script src="{{asset('')}}assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('')}}assets/js/main.js"></script>
+@stack('scripts')
 </body>
 
 </html>

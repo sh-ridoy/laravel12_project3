@@ -1,10 +1,8 @@
 @extends('backend.master')
 
-@section('styles')
-   <link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('')}}assets/vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/style.css">
-    @endsection
+@push('styles')
+   
+    @endpush
 
 
 @section('content')
@@ -94,8 +92,6 @@
    
 
 @endsection
- @section('scripts')
- 
-    <script src="{{asset('')}}assets/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('')}}assets/js/main.js"></script>
-    @endsection
+ @push('scripts')
+
+    @endpush
