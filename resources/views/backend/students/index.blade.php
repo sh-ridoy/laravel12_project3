@@ -30,7 +30,7 @@
                     Student Table
                 </h2>
 
-                <a href="{{ url('/student/create') }}" class="btn btn-primary">
+                <a href="{{ route('student.create') }}" class="btn btn-primary">
                     Add New Student
                 </a>
             </div>
