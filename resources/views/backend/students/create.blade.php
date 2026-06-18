@@ -127,11 +127,11 @@
                                     <select name="district" class="form-select">
                                         <option value="">Select District</option>
                                         <option value="Dhaka">Dhaka</option>
-                                        <option value="Nilphamari">Nilphamari</option>
-                                        <option value="Rangpur">Rangpur</option>
-                                        <option value="Rajshahi">Madaripur</option>
-                                        <option value="Rajshahi">Gaibandha</option>
-                                        <option value="Rajshahi">Barishal</option>
+                                        <option value="Barisal">Barisal</option>
+                                        <option value="Patuakhali">Patuakhali</option>
+                                        <option value="Dhanmondi">Dhanmondi</option>
+                                        <option value="Rampura">Rampura</option>
+                                        <option value="Uttara">Uttara</option>
                                     </select>
                                 </div>
 
@@ -146,9 +146,9 @@
                                         <div class="col-6">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" name="subject[]"
-                                                    id="webDevelopment" value="Web Development">
-                                                <label class="form-check-label" for="webDevelopment">
-                                                    Web Development
+                                                    id="PHP" value="PHPt">
+                                                <label class="form-check-label" for="PHP">
+                                                   PHP
                                                 </label>
                                             </div>
                                         </div>
@@ -156,9 +156,9 @@
                                         <div class="col-6">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" name="subject[]"
-                                                    id="graphicsDesign" value="Graphics Design">
-                                                <label class="form-check-label" for="graphicsDesign">
-                                                    Graphics Design
+                                                    id="Javasrcipt" value="Javasrcipt">
+                                                <label class="form-check-label" for="Javasrcipt">
+                                                   Javasrcipt
                                                 </label>
                                             </div>
                                         </div>
@@ -166,9 +166,9 @@
                                         <div class="col-6 mt-2">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" name="subject[]"
-                                                    id="digitalMarketing" value="Digital Marketing">
-                                                <label class="form-check-label" for="digitalMarketing">
-                                                    Digital Marketing
+                                                    id="Laravel" value="Laravel">
+                                                <label class="form-check-label" for="Laravel">
+                                                    Laravel
                                                 </label>
                                             </div>
                                         </div>
@@ -176,9 +176,9 @@
                                         <div class="col-6 mt-2">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" name="subject[]"
-                                                    id="officeApplication" value="Office Application">
-                                                <label class="form-check-label" for="officeApplication">
-                                                    Office Application
+                                                    id="React" value="React">
+                                                <label class="form-check-label" for="React">
+                                                    React
                                                 </label>
                                             </div>
                                         </div>
