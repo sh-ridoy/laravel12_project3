@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Student;
+use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
- public function index()
-{
-    $students = Student::all();
+    public function index()
+    {
+        $students = Student::all();
+        return view('backend.students.index', compact('students'));
+    }
 
-    return view('backend.students.index', compact('students'));
-}
     /**
      * Show the form for creating a new resource.
      */
@@ -28,9 +28,26 @@ class StudentController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
-        //
-    }
+{
+    $request->validate([
+        'name' => 'required|min:4|max:25',
+        'gender' => 'required',
+        'email' => 'required|email|unique:students,email',
+    ]);
+
+    $student = new Student();
+
+    $student->name = $request->name;
+    $student->gender = $request->gender;
+    $student->email = $request->email;
+    $student->phone = $request->phone;
+    $student->district = $request->district;
+    $student->subject = json_encode($request->subject);
+
+    $student->save();
+
+    return redirect('/students');
+}
 
     /**
      * Display the specified resource.
