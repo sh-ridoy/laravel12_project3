@@ -33,6 +33,7 @@ class StudentController extends Controller
         'name' => 'required|min:4|max:25',
         'gender' => 'required',
         'email' => 'required|email|unique:students,email',
+        'phone' =>'min:11'
     ]);
 
     $student = new Student();
@@ -42,9 +43,15 @@ class StudentController extends Controller
     $student->email = $request->email;
     $student->phone = $request->phone;
     $student->district = $request->district;
-    $student->subject = json_encode($request->subject);
+    // $student->subject = json_encode($request->subject);
+    $subjects = $request->subject;
+    $subjects = implode(",",$subjects);
+
+    $student-> subject=$subjects;
+
 
     $student->save();
+      return redirect('/students')->with('success','successfully student created');
 
     return redirect('/students');
 }
